@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our engagement invitation</title>
+    <link rel="stylesheet" type="text/css" href="engagement.css"  media="screen and (max-width:1024px)">
+    <link rel="stylesheet" type="text/css" href="engNot.css" media="screen and (max-width:2560px) and (min-width:1024px)">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif Simplified Chinese' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif Armenian' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <script src="engagement.js"></script>
+</head>
+<body>
+    <div class="mainbox">
+        <div id="album_background">
+            <div id="box" class="main">
+                <button onclick="next()">&gt;</button>
+                <button onclick="previous()">&lt;</button>
+            </div>
+            <button onclick="minimilze()">x</button>        
+        </div>
+        <div class="to_top" onclick="toTop()">
+            <button id="scrollToTopButton">∆</button>
+        </div>
+        <div class="headerr">
+            <div class="date">
+                <div class="lang">
+                    <button onclick="changeLang()">ENG / ՀԱՅ / РУС</button>
+                </div>
+                <div>
+                    <h1 id="engTitle">Save the Date</h1>
+                    <h1 id="armTitle">Մտապահի՛ր ամսաթիվը</h1>
+                    <h1 id="rusTitle">Сохраните дату</h1>
+                    <h1>07.07.2024</h1>
+                </div>
+                <div>
+                    <div id="engNames">
+                        <div class="names">
+                            <p>Harut</p>
+                            <p>and</p>
+                            <p>Alina</p>
+                        </div> 
+                    </div>
+                    <div id="armNames">
+                        <div class="names_two">
+                            <p>Հարութ</p>
+                            <p>&</p>
+                            <p>Ալինա</p>
+                        </div>
+                    </div>
+                    <div id="rusNames">
+                        <div class="names_three">
+                            <p>Арут</p>
+                            <p>&</p>
+                            <p>Алина</p>
+                        </div>
+                    </div>
+                    <div id="countdown"></div>
+                    <div id="engCounter">days | hours | min | sec</div>
+                    <div id="armCounter">օր | ժամ | րոպե | վրկ</div>
+                    <div id="rusCounter">день | час | мин | сек</div>
+                </div>
+            </div>
+        </div>
+        <div class="invitation">
+            <div class="background_text">
+                <p>07<br>07<br>24</p>
+            </div>
+            <div class="centered_text">
+                <p id="engInvite">Our love story is like no other and we can't wait to<br>share it with you. Mark your calendar for our engagement<br>day and become a part of our unique fairy tale.<br><br>
+                Get ready to witness the magic of our love story.<br><br>
+                We will be waiting for you at 18:00 at the<br>Wine Corner restaurant in Ashtarak.</p>
+                <p id="armInvite">Մեր պատմությունը նման չէ ոչ մեկին և մենք<br>անհամբեր ենք այն ձեզ հետ կիսելու։ Նշեք ձեր<br>օրացույցում մեր նշանադրության օրը և դարձեք մեր<br>յուրահատուկ հեքիաթի մի մասնիկը։<br><br>
+                Սիրով կսպասենք ձեզ ժամը 18։00-ին ք.Աշտարակում<br>գտնվող Wine Corner ռեստորանում։</p>
+                <p id="rusInvite">Наша история не похожа ни на одну другую,<br>и нам не терпится поделиться ею с вами.<br>Отметьте дату нашей помолвки в своем календаре и<br>станьте частью нашей неповторимой сказки.<br><br>
+                Будем ждать вас в 18:00 в ресторане<br>Wine Corner в Аштараке.</p>
+            </div>
+        </div>
+        <div class="pictures">
+            <img src="./photos/photo1.jpg" alt="we" onclick="maximize(1)">
+            <img src="./photos/photo2.jpg" alt="we" onclick="maximize(2)">
+            <img src="./photos/photo3.jpg" alt="we" onclick="maximize(3)">
+            <img src="./photos/photo4.jpg" alt="we" onclick="maximize(4)">
+        </div>
+        <div class="dress_code">
+            <div class="text_background">
+                <p>DRESS<br>CODE</p>
+            </div>
+            <div class="centered_text">
+                <p id="engDressCode">We have tried to make nicer our engagement day and<br>we'll be so happy and thankful to you if you help us to<br>keep the colour palette of our day.</p>
+                <p id="armDressCode">Մենք փորձել ենք ավելի գեղեցկացնել մեր նշանադրության օրը<br>և մենք շատ ուրախ ու շնորհակալ կլինենք, եթե դուք օգնեք<br>պահպանել մեր օրվա գունապնակը։</p>
+                <p id="rusDressCode">Мы постарались сделать день нашей помолвки прекраснее<br>и будем очень рады и благодарны, если вы поможете<br>сохранить палитру нашего дня.</p>
+            </div>
+        </div>
+        <div class="colour_palette">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="pictures">
+            <img src="./photos/photo5.jpg" alt="we" onclick="maximize(5)">
+            <img src="./photos/photo6.jpg" alt="we" onclick="maximize(6)">
+            <img src="./photos/photo7.jpg" alt="we" onclick="maximize(7)">
+            <img src="./photos/photo8.jpg" alt="we" onclick="maximize(8)">
+        </div>
+        <div class="map">
+            <h1 id="engAdress">Wine Corner Cafe & Restaurant</h1>
+            <h1 id="armAdress">Wine Corner ռեստորան</h1>
+            <h1 id="rusAdress">Wine Corner кафе и ресторан</h1>
+            <h2 id="engAdressClick">Click here to see how to get there.👇🏼</h2>
+            <h2 id="armAdressClick">Սեղմեք այստեղ՝ տեսնելու, թե ինչպես հասնել։ 👇🏼</h2>
+            <h2 id="rusAdressClick">Нажмите здесь, чтобы узнать, как туда добраться. 👇🏼</h2>
+            <div class="way">
+                <a href="https://yandex.com/navi/org/139778273402"><img src="./photos/map.jpeg" alt="we"></a>
+            </div>
+        </div>
+        <div class="footerr">
+            <div id="engEnd">
+                <p>Harut & Alina</p>
+            </div>
+            <div id="armEnd">
+                <p>Հարութ & Ալինա</p>
+            </div>
+            <div id="rusEnd">
+                <p>Арут & Алина</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

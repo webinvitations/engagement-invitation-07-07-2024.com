@@ -1,0 +1,342 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div#album_background{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #bcb0a6a9;  
+    position: fixed;
+    z-index: 1;
+}
+div#album_background > button{
+    position: absolute;
+    padding: 7px 14px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transform: translate(50%,-50%);
+    top:5%;
+    right: 3%;
+}
+div.main{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+div.main img{
+    width: 400px;
+}
+div.main button{
+    position: absolute;
+    top: 50%;
+    padding: 7px 14px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+div.main button:nth-of-type(1){
+    transform: translate(-50%,-50%);
+    right: 30%;
+}
+div.main button:nth-of-type(2){
+    transform: translate(50%,-50%);
+    left: 30%;
+}
+div.mainbox{
+	margin: auto;
+    position: relative;
+}
+div.to_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#scrollToTopButton{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #decec185;
+    color: black;
+}
+div.date #engTitle, div.date #engNames, div.date #engCounter, div.centered_text #engInvite, div.centered_text #engDressCode, div.map #engAdress, div.map #engAdressClick, div.footerr #engEnd{
+    display: block;
+}
+div.date #armTitle, div.date #armNames, div.date #armCounter{
+    display: none;
+    font-family: 'Noto Serif Armenian';
+    margin: 10px;
+}
+div.centered_text #armInvite, div.centered_text #armDressCode, div.map #armAdress, div.map #armAdressClick, div.footerr #armEnd{
+    display: none;
+    font-family: 'Noto Serif Armenian';
+    font-weight: bold;
+    margin: 10px;
+}
+div.date #rusTitle, div.date #rusNames, div.date #rusCounter{
+    display: none;
+    font-family: 'EB Garamond';
+    margin: 10px;
+}
+div.centered_text #rusInvite, div.centered_text #rusDressCode, div.map #rusAdress, div.map #rusAdressClick, div.footerr #rusEnd{
+    display: none;
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    margin: 10px;
+}
+div.date #rusCounter, div.date #armCounter{
+    margin: 0 !important;
+}
+#armTitle, #rusTitle{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+#armNames, #rusNames{
+    font-size: 40px;
+}
+#armEnd, #rusEnd{
+    font-size: 20px;
+}
+div.centered_text #armInvite, div.centered_text #armDressCode, div.centered_text #rusInvite, div.centered_text #rusDressCode{
+    font-size: 22px;
+}
+div.headerr{
+    background-color: #6f5c3e2e;
+}
+div.date{
+	background-image: url(./photos/photo.jpg);
+    width: 1024px;
+    height: 868px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 30px 40px;
+    position: relative;
+    color: white;
+}
+div.date div.lang{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+div.date div.lang button{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: 160px;
+    height: 35px;
+    border: 1px white solid;
+    border-radius: 25px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+div.date div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.date h1:nth-of-type(1), div.date h1:nth-of-type(2){
+    align-items: center;
+	color: white;
+	font-size: 110px;
+	font-family: 'Tangerine', cursive;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+div.date h1:nth-of-type(3){
+	color: white;
+	font-size: 50px;
+	font-family: 'Cardo', cursive;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+div.names, div.names_two, div.names_three{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.names p{
+    color: white;
+}
+div.names p:nth-of-type(1), div.names p:nth-of-type(3){
+    font-size: 60px;
+	font-family: 'Cormorant Garamond', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+div.names p:nth-of-type(2), div.names_two p:nth-of-type(2), div.names_three p:nth-last-of-type(2){
+    font-size: 40px;
+    font-family: 'Tangerine', cursive;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+div.date div:nth-of-type(3) #countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Cardo', cursive;
+    color: white;
+}
+div.date div:nth-of-type(3) #engCounter, div.date div:nth-of-type(3) #armCounter, div.date div:nth-of-type(3) #rusCounter{
+    font-size: 20px;
+    color: #ffffff99;
+    text-align: center;
+}
+div.invitation, div.dress_code{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.background_text, div.text_background{
+    padding: 43px;
+    text-align: center;
+    font-size: 150px;
+    color: #6f5c3e2e;
+}
+div.text_background{
+    font-size: 135px !important;
+}
+div.centered_text{
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    padding: 62px;
+    font-family: 'Noto Serif Simplified Chinese';
+    font-weight: 100;
+    line-height: 42px;
+    text-indent: 10px;
+    color: #000000c2;
+}
+div.pictures{
+    background-color: #6f5c3e2e;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+div.pictures img{
+    height: 250px;
+    cursor: pointer;
+}
+div.pictures img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+div.colour_palette{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 43px;
+}
+div.colour_palette div{
+    width: 450px;
+    height: 70px;
+    border: 1px #0000004d solid;
+}
+div.colour_palette div:nth-of-type(1){
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+div.colour_palette div:nth-of-type(2){
+    background-color: #f8f2e7;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+div.colour_palette div:nth-of-type(3){
+    background-color: #E6DCD3;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+div.colour_palette div:nth-of-type(4){
+    background-color: #bbddca;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+div.colour_palette div:nth-of-type(5){
+    background-color: #0e0c2f;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+div.colour_palette div:nth-of-type(6){
+    background-color: black;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;    
+}
+div.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+div.map h1{
+    font-size: 40px;
+}
+div.map h2#engAdressClick{
+    font-size: 25px;
+}
+div.map h2#armAdressClick{
+    font-size: 15px;
+}
+div.map h2#rusAdressClick{
+    font-size: 20px;
+}
+div.map h1, h2{
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0px 0px 30px;
+}
+div.map div.way img{
+    margin: auto;
+    height: 500px;
+    width: 820px;
+    cursor: pointer;
+}
+div.map div.way img:hover{
+    opacity: 0.5;
+}
+div.footerr{
+    background-color: #6f5c3e2e;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+div.footerr #engEnd{
+	font-family: 'Cormorant Garamond', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 30px;
+}

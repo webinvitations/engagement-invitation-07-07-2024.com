@@ -1,0 +1,356 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+div#album_background{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #bcb0a6a9;  
+    position: fixed;
+    z-index: 1;
+}
+div#album_background > button{
+    position: absolute;
+    padding: 7px 14px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transform: translate(50%,-50%);
+    top:5%;
+    right: 8%;
+}
+div.main{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+div.main img{
+    width: 300px;
+}
+div.main button{
+    position: absolute;
+    top: 50%;
+    padding: 7px 14px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+div.main button:nth-of-type(1){
+    transform: translate(-50%,-50%);
+    right: -1%;
+}
+div.main button:nth-of-type(2){
+    transform: translate(50%,-50%);
+    left: -1%;
+}
+div.mainbox{
+	margin: auto;
+}
+div.to_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#scrollToTopButton{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #decec185;
+    color: black;
+}
+div.date #engTitle, div.date #engNames, div.date #engCounter, div.centered_text #engInvite, div.centered_text #engDressCode, div.map #engAdress, div.map #engAdressClick, div.footerr #engEnd{
+    display: block;
+}
+div.date #armTitle, div.date #armNames, div.date #armCounter{
+    display: none;
+    font-family: 'Noto Serif Armenian';
+    margin: 10px;
+}
+div.centered_text #armInvite, div.centered_text #armDressCode, div.map #armAdress, div.map #armAdressClick, div.footerr #armEnd{
+    display: none;
+    font-family: 'Noto Serif Armenian';
+    font-weight: bold;
+    margin: 10px;
+}
+div.date #rusTitle, div.date #rusNames, div.date #rusCounter{
+    display: none;
+    font-family: 'EB Garamond';
+    margin: 10px;
+}
+div.centered_text #rusInvite, div.centered_text #rusDressCode, div.map #rusAdress, div.map #rusAdressClick, div.footerr #rusEnd{
+    display: none;
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    margin: 10px;
+}
+div.date #rusCounter, div.date #armCounter{
+    margin: 0 !important;
+}
+#armTitle{
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+#armNames{
+    font-size: 20px;
+}
+div.centered_text #armInvite, div.centered_text #armDressCode{
+    font-size: 10px;
+}
+#armEnd{
+    font-size: 12px;
+}
+#rusTitle{
+    font-size: 31px;
+    letter-spacing: 3px;
+}
+#rusNames{
+    font-size: 20px;
+}
+div.centered_text #rusInvite, div.centered_text #rusDressCode{
+    font-size: 12px;
+}
+#rusEnd{
+    font-size: 14px;
+}
+div.headerr{
+    background-color: #6f5c3e2e;
+}
+div.date{
+	background-image: url(./photos/photo.jpg);
+    width: 320px;
+    height: 565px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 30px 40px;
+    position: relative;
+    color: white;
+}
+div.date div.lang{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+div.date div.lang button{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: 105px;
+    height: 20px;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+div.date div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.date h1:nth-of-type(1), div.date h1:nth-of-type(2){
+    align-items: center;
+	color: white;
+	font-size: 50px;
+	font-family: 'Tangerine', cursive;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+div.date h1:nth-of-type(3){
+	color: white;
+	font-size: 25px;
+	font-family: 'Cardo', cursive;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+div.names, div.names_two, div.names_three{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.names p{
+    color: white;
+}
+div.names p:nth-of-type(1), div.names p:nth-of-type(3){
+    font-size: 25px;
+	font-family: 'Cormorant Garamond', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+div.names p:nth-of-type(2), div.names_two p:nth-of-type(2), div.names_three p:nth-last-of-type(2){
+    font-size: 20px;
+    font-family: 'Tangerine', cursive;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+div.date div:nth-of-type(3) #countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'Cardo', cursive;
+    color: white;
+}
+div.date div:nth-of-type(3) #engCounter, div.date div:nth-of-type(3) #armCounter{
+    font-size: 10px;
+    color: #ffffff99;
+    text-align: center;
+}
+div.date div:nth-of-type(3) #rusCounter{
+    font-size: 15px;
+    color: #ffffff99;
+    text-align: center;
+}
+div.invitation, div.dress_code{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.background_text, div.text_background{
+    padding: 43px;
+    text-align: center;
+    font-size: 80px;
+    color: #6f5c3e2e;
+}
+div.text_background{
+    font-size: 50px !important;
+}
+div.centered_text{
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Noto Serif Simplified Chinese';
+    font-weight: 100;
+    line-height: 17px;
+    text-indent: 10px;
+    color: #000000c2;
+}
+div.pictures{
+    background-color: #6f5c3e2e;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+}
+div.pictures img{
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+div.colour_palette{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 43px;
+}
+div.colour_palette div{
+    width: 170px;
+    height: 25px;
+    border: 1px #0000004d solid;
+}
+div.colour_palette div:nth-of-type(1){
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+div.colour_palette div:nth-of-type(2){
+    background-color: #f8f2e7;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+div.colour_palette div:nth-of-type(3){
+    background-color: #E6DCD3;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+div.colour_palette div:nth-of-type(4){
+    background-color: #bbddca;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+div.colour_palette div:nth-of-type(5){
+    background-color: #0e0c2f;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+div.colour_palette div:nth-of-type(6){
+    background-color: black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;    
+}
+div.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+div.map h1{
+    font-size: 18px;
+}
+div.map h2#engAdressClick{
+    font-size: 12px;
+}
+div.map h2#armAdressClick{
+    font-size: 8px;
+}
+div.map h2#rusAdressClick{
+    font-size: 10px;
+}
+div.map h1, h2{
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0px 0px 15px;
+}
+div.map div.way img{
+    margin: auto;
+    width: 270px;
+    height: 170px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+div.footerr{
+    background-color: #6f5c3e2e;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+div.footerr #engEnd{
+	font-family: 'Cormorant Garamond', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
